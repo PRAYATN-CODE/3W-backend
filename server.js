@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
-const allowedOrigins = ['http://localhost:5173', process.env.CLIENT_URL];
+const allowedOrigins = [process.env.CLIENT_URL, 'http://localhost:5173'];
 
 app.use(cors({
     origin: allowedOrigins,
